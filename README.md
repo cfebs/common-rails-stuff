@@ -20,12 +20,14 @@ Include the common_helper in the applicaiton_helper (bad practice?)
 
 In forms just use
 
-    =form_for @object |do| obj
+    = form_for @object |do| obj
       = errors_for obj
       ...
 
 To render flash divs
 
-    = flash_on
+    = flashy flash
 
-Or just render the partial in shared/
+Or just render the partial passing the flash
+
+    = render 'shared/flash', :flash => f

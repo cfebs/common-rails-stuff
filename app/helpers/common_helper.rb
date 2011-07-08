@@ -5,7 +5,7 @@ module CommonHelper
     end
   end
   
-  def flash_on
-    render 'shared/flash'
+  def flashy f
+    render 'shared/flash', :flash => f
   end
 end
