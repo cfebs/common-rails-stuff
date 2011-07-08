@@ -13,10 +13,10 @@ Includes a few trivial haml helpers and partials to handle form errors and flash
 
 Include the common_helper in the applicaiton_helper (bad practice?)
 
-  module ApplicationHelper
-    include CommonHelper
-    ...
-  end
+    module ApplicationHelper
+      include CommonHelper
+      ...
+    end
 
 In forms just use
 
